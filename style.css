@@ -1,0 +1,143 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #000000;
+  font-family: 'Space Mono', monospace;
+  background-image: url('images/rain.png');
+  text-align: center;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  max-width: 1000px;
+  width: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+#Character {
+  max-width: 100%;
+  height: auto;
+}
+
+.left-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: #ffffff;
+  text-align: left;
+  gap: 20px;
+}
+
+.left-container div {
+  margin-bottom: 15px;
+}
+
+.right-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#Notfound404 {
+  font-size: 1.125rem;
+  font-weight: normal;
+  position: absolute;
+  text-align: left;
+  left: 1.82%;
+  top: 2.31%;
+}
+
+#Text {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+#Subtext {
+  font-size: 1.25rem;
+}
+
+#backBtn {
+  font-family: 'Space Mono', monospace;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  padding: 15px 25px;
+  border-radius: 5px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+#backBtn:hover {
+  background-color: #000000;
+  color: #ffffff;
+  transition: 0.5s;
+}
+
+#backBtn:hover ~ #Light {
+  opacity: 0;
+}
+
+#Created {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 0);
+  text-align: center;
+}
+
+.created-by {
+  font-size: 0.8rem;
+  font-weight: normal;
+  color: #ffffff;
+  text-align: center;
+}
+
+.marcoljunior {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+}
+
+.devChallenges {
+  font-size: 0.8rem;
+  font-weight: normal;
+  color: #ffffff;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .left-container, .right-container {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+
+  .left-container {
+    align-items: center;
+    text-align: center;
+  }
+
+  #backBtn {
+    align-self: center;
+  }
+}
